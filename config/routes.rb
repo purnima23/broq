@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'static_pages/save'
+
+  get 'static_pages/spend'
+
+  get 'static_pages/job'
+
+  get 'static_pages/askforfund'
+
   # resources :ask_for_fund_categories
   # resources :spend_categories
   

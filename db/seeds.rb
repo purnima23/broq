@@ -5,8 +5,3 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
- 
- Category.create(:name => "SAVE")
- Category.create(:name => "SPEND")
- Category.create(:name => "JOBS" )
- Category.create(:name => "FUNDS")
