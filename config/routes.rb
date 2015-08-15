@@ -3,9 +3,7 @@ Rails.application.routes.draw do
   # resources :spend_categories
   
   resources :wallets  
-  resources :categories 
 
-  match '/submit',  to: 'categories#index', via: 'get'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

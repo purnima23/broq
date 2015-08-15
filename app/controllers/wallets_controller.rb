@@ -10,7 +10,6 @@ class WalletsController < ApplicationController
   # GET /wallets/1
   # GET /wallets/1.json
   def show
-    @categories = Category.all
     wallet = Wallet.last
     @average = wallet.balance_left / wallet.days_left
 
