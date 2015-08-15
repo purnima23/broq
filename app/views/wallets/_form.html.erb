@@ -1,0 +1,25 @@
+<%= form_for(@wallet) do |f| %>
+  <% if @wallet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@wallet.errors.count, "error") %> prohibited this wallet from being saved:</h2>
+
+      <ul>
+      <% @wallet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :balance_left %><br>
+    <%= f.number_field :balance_left %>
+  </div>
+  <div class="field">
+    <%= f.label :days_left %><br>
+    <%= f.number_field :days_left %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

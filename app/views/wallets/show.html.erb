@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Balance left:</strong>
+  <%= @wallet.balance_left %>
+</p>
+
+<p>
+  <strong>Days left:</strong>
+  <%= @wallet.days_left %>
+</p>
+
+<%= link_to 'Edit', edit_wallet_path(@wallet) %> |
+<%= link_to 'Back', wallets_path %>
