@@ -10,14 +10,11 @@
   </thead>
      </thead>
 
-   <tbody> <p> SAVE </p>
-           <p> SPEND </p>
-           <p> JOBS </p>
-           <p> ASK FOR FUNDS </p>
-
-
-
-
+   <tbody> 
+    <ul id="menu">
+      <li><%= link_to "Save",save_path %></li>
+      <li><%= link_to "Earn",earn_path %></li>
+    </ul>
    </tbody>
  </table>
 
@@ -26,3 +23,9 @@
 
   </tbody>
 </table>
+
+<style>
+ul#menu li {
+    display:inline;
+}
+</style>
