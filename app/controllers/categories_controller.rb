@@ -1,16 +1,17 @@
 class CategoriesController < ApplicationController
-  before_action :set_category, only: [:show, :edit, :update, :destroy]
+  before_action :set_wallet, only: [:show, :edit, :update, :destroy]
 
   # GET /categories
   # GET /categories.json
   def index
-    @categories = Category.all
+    @category = Category.all
   end
 
   # GET /categories/1
   # GET /categories/1.json
   def show
     @categories = Category.all 
+    @categories = @wallet.categories
   end
 
   # GET /categories/new
@@ -29,8 +30,8 @@ class CategoriesController < ApplicationController
 
     respond_to do |format|
       if @category.save
-        format.html { redirect_to @category, notice: 'Category was successfully created.' }
-        format.json { render :show, status: :created, location: @category }
+           flash[:success] = "Yoo wassup!"
+            redirect_to wallet_categories_path(params[:wallet_id])
       else
         format.html { render :new }
         format.json { render json: @category.errors, status: :unprocessable_entity }

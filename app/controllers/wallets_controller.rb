@@ -10,6 +10,10 @@ class WalletsController < ApplicationController
   # GET /wallets/1
   # GET /wallets/1.json
   def show
+    @categories = Category.all
+    wallet = Wallet.last
+    @average = wallet.balance_left / wallet.days_left
+
   end
 
   # GET /wallets/new
@@ -27,7 +31,8 @@ class WalletsController < ApplicationController
     @wallet = Wallet.new(wallet_params)
 
     respond_to do |format|
-        format.html { redirect_to 'wallets/show', notice: 'Wallet was successfully created.' }
+      if @wallet.save
+        format.html { redirect_to @wallet, notice: 'Wallet was successfully created.' }
         format.json { render :show, status: :created, location: @wallet }
        else
         format.html { render :new }

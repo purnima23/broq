@@ -1,14 +1,28 @@
-<p id="notice"><%= notice %></p>
+<p> YOU HAVE AN AVERAGE </p> 
+<p> $$ <%= @average %> </p>
 
-<p>
-  <strong>Balance left:</strong>
-  <%= @wallet.balance_left %>
-</p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+     </thead>
 
-<p>
-  <strong>Days left:</strong>
-  <%= @wallet.days_left %>
-</p>
+   <tbody>
+   <% @categories.each do |category| %>
+      <tr>
+       <td><%= category.name %></td>
 
-<%= link_to 'Edit', edit_wallet_path(@wallet) %> |
-<%= link_to 'Back', wallets_path %>
+     </tr>
+    <% end %>
+
+   </tbody>
+ </table>
+
+
+  <tbody>
+
+  </tbody>
+</table>
