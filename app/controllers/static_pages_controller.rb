@@ -2,12 +2,7 @@ class StaticPagesController < ApplicationController
   def save
   end
 
-  def spend
+  def earn
   end
-
-  def job
-  end
-
-  def askforfund
-  end
+  
 end
