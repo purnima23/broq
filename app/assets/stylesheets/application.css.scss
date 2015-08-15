@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+	font-family: Linotte-SemiBold, Helvetica, Calibri, sans-serif;
+	color: #6b7381;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}

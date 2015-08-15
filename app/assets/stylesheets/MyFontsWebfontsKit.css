@@ -1,0 +1,28 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3076028, 2015-08-15T12:56:45-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Linotte-SemiBold by JCFonts
+ * URL: http://www.myfonts.com/fonts/jcfonts/linotte/semi-bold/
+ * Copyright: Copyright 2014 by Joel Carrouche. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3076028
+ * 
+ * © 2015 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2eefbc");
+
+  
+@font-face {font-family: 'Linotte-SemiBold';src: url('webfonts/2EEFBC_0_0.eot');src: url('webfonts/2EEFBC_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2EEFBC_0_0.woff2') format('woff2'),url('webfonts/2EEFBC_0_0.woff') format('woff'),url('webfonts/2EEFBC_0_0.ttf') format('truetype');}
+ 

@@ -14,3 +14,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require jquery
+//= require bootstrap-sprockets
+
+$(document).ready(function(){
+	$(".balance").on('click', function() {
+		$(".balance-help").removeClass('hide');
+		console.log("hey!");
+	})
+});

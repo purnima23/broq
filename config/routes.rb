@@ -9,8 +9,8 @@ Rails.application.routes.draw do
 
   # resources :ask_for_fund_categories
   # resources :spend_categories
-  
-  resources :wallets  
+
+  resources :wallets
 
 
 
