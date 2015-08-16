@@ -1,0 +1,63 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.earn {
+	background: url(<%= asset_path 'bg_earn.jpg' %>) no-repeat center top;
+	background-color: #9B9B9B;
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-position: center center;
+	min-height: 720px;
+
+	.container {
+		padding-bottom: 80px;
+	}
+}
+
+.card {
+	position: relative;
+	overflow: hidden;
+	margin: 0.5rem 0 1rem 0;
+	background-color: #fff;
+	transition: box-shadow .25s;
+	border-radius: 2px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	color: #9B9B9B;
+	text-align: left;
+
+	.card-content {
+		padding: 20px;
+		border-radius: 0 0 2px 2px;
+	}
+
+	.card-title {
+	    line-height: 48px;
+	    font-size: 24px;
+        font-weight: 300;
+	}
+
+	.card-action {
+	    border-top: 1px solid rgba(160, 160, 160, 0.2);
+	    padding: 20px;
+	    a {
+    		color: #F29F81;
+    		margin-right: 20px;
+    		-webkit-transition: color .3s ease;
+    		-moz-transition: color .3s ease;
+    		-o-transition: color .3s ease;
+    		-ms-transition: color .3s ease;
+    		transition: color .3s ease;
+    		text-transform: uppercase;
+    		background-color: transparent;
+    	}
+	}
+}
+
+.result {
+	h1 {
+		margin-bottom: 20px;
+	}
+}
+
+
+

@@ -1,13 +1,13 @@
 // Place all the styles related to the Wallets controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body {
+.welcome, .choices {
 	background: url("<%= asset_path 'bg.jpg' %>") no-repeat center top;
 	background-size: cover;
 	background-position: center center;
 }
 
-body:before {
+.welcome:before, .choices:before {
     position: absolute;
     top: 0;
     left: 0;
@@ -43,6 +43,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .welcome, .choices {
+	width: 100%;
 	min-height: 720px;
 }
 .field {

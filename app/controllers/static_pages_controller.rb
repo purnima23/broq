@@ -5,7 +5,7 @@ class StaticPagesController < ApplicationController
   def spend
   end
 
-  def job
+  def earn
   end
 
   def askforfund

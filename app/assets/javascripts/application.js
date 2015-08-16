@@ -16,7 +16,6 @@
 //= require_tree .
 //= require jquery
 //= require bootstrap-sprockets
-//= require Chart
 
 $(document).ready(function(){
 	$(".balance").on('click', function() {
@@ -29,7 +28,7 @@ $(document).ready(function(){
 	    datasets: [
 	        {
 	            label: "My First dataset",
-	            fillColor: "rgba(220,220,220,0.5)",
+	            fillColorn: "rgba(220,220,220,0.5)",
 	            strokeColor: "rgba(220,220,220,0.8)",
 	            highlightFill: "rgba(220,220,220,0.75)",
 	            highlightStroke: "rgba(220,220,220,1)",

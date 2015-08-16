@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'static_pages/save'
 
-  get 'static_pages/spend'
+  get 'static_pages/earn'
 
   get 'static_pages/job'
 
