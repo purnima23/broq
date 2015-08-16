@@ -1,4 +1,6 @@
 class StaticPagesController < ApplicationControllers
-  def earn
+
+  def earn	
   end
+
 end

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Saves</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @saves.each do |safe| %>
+      <tr>
+        <td><%= safe.title %></td>
+        <td><%= safe.description %></td>
+        <td><%= link_to 'Show', safe %></td>
+        <td><%= link_to 'Edit', edit_safe_path(safe) %></td>
+        <td><%= link_to 'Destroy', safe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Save', new_safe_path %>
