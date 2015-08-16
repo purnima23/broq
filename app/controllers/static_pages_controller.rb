@@ -1,8 +1,4 @@
-class StaticPagesController < ApplicationController
-  def save
-  end
-
+class StaticPagesController < ApplicationControllers
   def earn
   end
-  
 end
