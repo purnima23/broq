@@ -1,4 +1,5 @@
   Rails.application.routes.draw do
+  resources :savings
   get 'static_pages/save'
 
   get 'static_pages/earn'
