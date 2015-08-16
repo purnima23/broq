@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat;
+html{
+	background: url("<%= asset_path 'bg_earn.jpg' %>") no-repeat center top;
   background-size: cover;
   height:100%;
 }
@@ -16,43 +17,32 @@ html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat
 }
 
 #form-div {
-	background-color:rgba(72,72,72,0.4);
+	background-color: white;
 	padding-left:35px;
 	padding-right:35px;
 	padding-top:35px;
 	padding-bottom:50px;
-	width: 450px;
-	float: left;
-	left: 50%;
-	position: absolute;
   margin-top:30px;
-	margin-left: -260px;
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
 }
 
 .feedback-input {
 	color:#3c3c3c;
-	font-family: Helvetica, Arial, sans-serif;
-  font-weight:500;
+	font-family: Linotte-SemiBold, Helvetica, Calibri, sans-serif;
+	color: #6b7381;
 	font-size: 18px;
 	border-radius: 0;
 	line-height: 22px;
 	background-color: #fbfbfb;
 	padding: 13px 13px 13px 54px;
 	margin-bottom: 10px;
-	width:100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
-  border: 3px solid rgba(0,0,0,0);
+	width: 100%;
 }
 
 .feedback-input:focus{
 	background: #fff;
 	box-shadow: 0;
-	border: 3px solid #3498db;
 	color: #3498db;
 	outline: none;
   padding: 13px 13px 13px 54px;
@@ -134,11 +124,11 @@ input:focus, textarea:focus {
 	background-color: rgba(0,0,0,0);
 	color: #FF8566;
 }
-	
+
 .submit:hover {
 	color: #FF8566;
 }
-	
+
 .ease {
 	width: 0px;
 	height: 74px;
@@ -165,4 +155,24 @@ input:focus, textarea:focus {
 		padding-right: 3%;
 	}
 }
-		
+
+
+input[type="text"], input[type="integer"] {
+  	display: block;
+  	margin: 0;
+  	letter-spacing: -1.2px;
+  	appearance: none;
+  	box-shadow: none;
+  	border-radius: none;
+	border: none;
+  	border-bottom: solid 2px #c9c9c9;
+  	transition: border 0.3s;
+  	// text-align: center;
+  	background-color: transparent;
+}
+
+input[type=text]::-webkit-inner-spin-button,
+input[type=text]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
