@@ -19,7 +19,7 @@
 
 $(document).ready(function(){
 	$(".balance").on('click', function() {
-		$(".balance-help").removeClass('hide');
+		// $(".balance-help").removeClass('hide');
 		console.log("hey!");
 	});
 
@@ -38,7 +38,7 @@ $(document).ready(function(){
 	};
 
 	// Get the context of the canvas element we want to select
-	var ctx = document.getElementById("myChart").getContext("2d");
-	var myNewChart = new Chart(ctx).Bar(data);
+	// var ctx = document.getElementById("myChart").getContext("2d");
+	// var myNewChart = new Chart(ctx).Bar(data);
 });
 
