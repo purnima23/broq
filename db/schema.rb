@@ -13,15 +13,16 @@
 
 ActiveRecord::Schema.define(version: 20150816005339) do
 
-  create_table "categories", force: :cascade do |t|
-    t.string   "name"
+  create_table "create_maping_requests", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "create_maping_requests", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table "saves", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "transfers", force: :cascade do |t|
