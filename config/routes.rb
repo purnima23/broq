@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
-  get 'static_pages/save', :as => 'save'
+  # get 'static_pages/save', :as => 'saves'
 
   get 'static_pages/earn', :as => 'earn'
 
   # resources :ask_for_fund_categories
   # resources :spend_categories
-  
+  # resources :saves
   resources :wallets  
+  resources :saves
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
